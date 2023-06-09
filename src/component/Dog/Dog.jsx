@@ -5,7 +5,8 @@ import styles from './styles.module.css'
 export default function Dog({itemIndex}){
     const obj ={
         0:{ left: '0%'  },
-        1:{ left: '15%' }
+        1:{ left: '15%' },
+        2:{ left: '30%' }
     }
     const [text,setText]= useState('')
     const [click, setClick]=useState(false)

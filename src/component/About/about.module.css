@@ -109,3 +109,24 @@
 .logo_ancho:hover{
     transform: scale(1.05);
 }
+.contactos{
+    display: flex;
+    flex-direction: column;
+    z-index: 30;
+    position: absolute;
+    left: 2%;
+    font-size: 3.8em;
+    top: 40vh;
+
+    color: white;
+    
+    
+}
+
+.icon{
+    transition: 0.2s ease;
+    
+}
+.icon:hover{
+    transform: scale(1.1);
+}

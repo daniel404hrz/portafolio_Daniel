@@ -8,6 +8,8 @@ import reactI from '../../image/logos/react.png'
 import redux from '../../image/logos/redux.png'
 import trio from '../../image/logos/trio.png'
 import vite from '../../image/logos/vite.png'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 export default function About(){
     const arrLogos = [next,postG,reactI,redux,trio,vite]
     const [click, setClick]= useState(false)
@@ -24,10 +26,20 @@ export default function About(){
            </p>
            
             </section>
-          
+          <section className={styles.contactos}>
+          <a  href="https://www.linkedin.com/in/daniel-hern%C3%A1ndez-236165259/" target="_blank" >
+          <FontAwesomeIcon className={styles.icon} icon={faLinkedin} />
+            
+          </a>
+          <a href="https://github.com/daniel404hrz" target="_blank" >
+          <FontAwesomeIcon className={styles.icon} icon={faGithub} />
+
+            
+          </a>
+          </section>
            
             <section onClick={onClickTech} className={styles.box_tech}>
-            <h3 className={styles.tech_title}>Tecnologias</h3>
+            <h3 className={styles.tech_title}>Tecnologias </h3>
 
             <div className={click ? styles.arrow_on:styles.arrow_box}>
                 {click ?<FontAwesomeIcon className={styles.arrow_icon} icon={faAngleRight} /> :
