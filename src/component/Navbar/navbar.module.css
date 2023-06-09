@@ -1,0 +1,31 @@
+.container{
+    backdrop-filter: blur(2px); /* Ajusta el valor para controlar el nivel de desenfoque */
+    background-color: rgba(9, 9, 9, 0.351);
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 10;
+}
+.navs{
+    display: flex;
+    height: 13vh;
+    
+    color: white;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.2em;
+    
+    list-style-type: none;
+  
+}
+.navs button{
+    padding: 10px 30px;
+    transition: 0.2s ease;
+    font-family: RetroFont, Arial, Helvetica, sans-serif ;
+    font-size: 1.4em;
+}
+.navs button:hover{
+    background-color: black;
+    
+    
+}

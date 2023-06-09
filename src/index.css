@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'RetroFont';
+    src: url('../src/image/fonts/small_bold_pixel-7.ttf');
+    /* Otros formatos de fuente (woff, woff2) si los tienes disponibles */
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'TitleFont';
+    src: url('../src/image/fonts/neon_pixel-7.ttf');
+    /* Otros formatos de fuente (woff, woff2) si los tienes disponibles */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+ 

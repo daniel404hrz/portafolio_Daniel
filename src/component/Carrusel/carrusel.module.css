@@ -1,0 +1,9 @@
+.carrusel{
+    display: flex;
+    
+    
+    scroll-snap-type: x mandatory;
+}
+.item{
+    
+}

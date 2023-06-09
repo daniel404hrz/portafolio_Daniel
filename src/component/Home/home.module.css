@@ -1,0 +1,98 @@
+@import 'https://fonts.googleapis.com/css?family=Rubik+One';
+* {
+    margin: 0;
+    padding: 0;
+}
+.homeContainer{
+    width: 100%;
+    
+    
+    
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 10vh;
+    background-image: url('../../image/city/city_1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 30px;
+    
+    height: 100vh; /* Cambia este valor según tus necesidades */
+    
+    
+}
+
+.title{
+    display: flex;
+    justify-content: flex-end;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.065);
+    width: 42%;
+    
+    padding: 0 8px;
+    color: white;
+    font-size: 6em;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+    margin-top: 5vh;
+    
+    border-radius: 20px;
+    font-family:RetroFont, Arial, Helvetica, sans-serif ;
+}
+.info{
+   display: flex;
+   justify-content: flex-end;
+    width: 100%;
+    position: absolute;
+    bottom: 16%;
+    right: 2%;
+    
+    
+    
+}
+.info h2{
+    
+    font-size: 1.4em;
+}
+.info_items{
+    color: white;
+   
+    padding: 50px;
+   width: 35%;
+    gap: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    backdrop-filter: blur(2px);
+    background-color: black;
+    height: 40vh;
+    margin-right: 20px;
+    border-radius: 10px;
+
+}
+.title_neon{
+    position: absolute;
+    left: 1%;
+    top: 16vh;
+    box-shadow: 1px 3px 16px 6px rgba(0,0,0,0.8);
+    font-family: Retrofont;
+    font-size: 3em;
+    padding: 0px 25px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    
+   
+    
+}
+
+
+
+	
