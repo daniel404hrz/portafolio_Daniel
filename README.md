@@ -27,6 +27,6 @@
 
 <h2>Contacto</h2>
 
-<p>Si estás interesado en colaborar en un proyecto o simplemente deseas obtener más información, no dudes en contactarme. Estoy emocionado por las oportunidades de crecimiento y aprendizaje en el ámbito del desarrollo web. Puedes encontrarme en [insertar tu información de contacto].</p>
+<p>Si estás interesado en colaborar en un proyecto o simplemente deseas obtener más información, no dudes en contactarme. Estoy emocionado por las oportunidades de crecimiento y aprendizaje en el ámbito del desarrollo web. Puedes encontrarme en <a href="https://www.linkedin.com/in/daniel-hern%C3%A1ndez-236165259/">Mi perfil de LinkedIn.</a></p>
 
 <p>¡Gracias por visitar mi portafolio!</p>
