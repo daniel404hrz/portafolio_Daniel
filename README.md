@@ -9,10 +9,10 @@
 <h2>Habilidades</h2>
 
 <ul>
-  <li>Desarrollo front-end utilizando React, Vite y Tailwind CSS.</li>
+  <li>Desarrollo front-end utilizando React, Vite,, Next y Tailwind CSS.</li>
   <li>Diseño y desarrollo de interfaces de usuario responsivas y atractivas.</li>
   <li>Integración de APIs y servicios web.</li>
-  <li>Implementación de bases de datos y gestión de datos.</li>
+  <li>Implementación de bases de datos y gestión de datos con PostgrestSQL.</li>
   <li>Experiencia en desarrollo back-end utilizando Node.js y Express.</li>
   <li>Conocimientos en sistemas de control de versiones, como Git.</li>
 </ul>
