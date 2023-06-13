@@ -4,9 +4,10 @@ import About from "../About/About";
 import Navbar from "../Navbar/Navbar";
 import Dog from "../Dog/Dog";
 import Proyects from "../Proyects/Project";
+import Contact from "../Contact/Contact";
 export default function Carrusel() {
   const [itemIndex, setItemIndex] = useState(0);
-  const array = [<Home />, <About />, <Proyects />];
+  const array = [<Home />, <About />, <Proyects />, <Contact/>];
   const navLinks = (event) => {
     const num = event.target.name;
     const index = parseInt(num, 10);

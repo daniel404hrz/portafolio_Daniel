@@ -15,6 +15,7 @@
     margin-top: 3%;
     background-color: #E1351A;
     display: flex;
+    box-shadow: 1px 3px 16px 6px rgba(0,0,0,0.4);
     justify-content: flex-end;
     padding: 50px;
     width: 45%;
@@ -30,7 +31,7 @@
     position: absolute;
     left: 1%;
     top: 16vh;
-    box-shadow: 1px 3px 16px 6px rgba(0,0,0,0.8);
+    box-shadow: 1px 3px 16px 6px rgba(0,0,0,0.2);
     font-family: Retrofont;
     font-size: 3em;
     padding: 0px 25px;
@@ -124,7 +125,8 @@
     z-index: 30;
     position: absolute;
     left: 2%;
-    font-size: 3.8em;
+    font-size: 4em;
+    gap: 10px;
     top: 40vh;
 
     color: white;
@@ -138,4 +140,119 @@
 }
 .icon:hover{
     transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    .title_neon{
+        font-size: 2.1em;
+        top: 15vh;
+    }
+    .info{
+        width: 70%;
+        margin-top: 5vh;
+        margin-right: 2%;
+        margin-bottom: 2vh;
+    }
+    .tech_title{
+        font-size: 2.3em;
+        right: 11vw;
+    }
+    .arrow_box{
+        height: 20vh;
+        font-size: 1.5em;
+        width: fit-content;
+       
+    
+      }
+      .arrow_of{
+        height: 20vh;
+        font-size: 1.5em;
+    
+      }
+      .arrow_box{
+        height: 20vh;
+        font-size: 1.5em;
+        width: fit-content;
+       
+    
+      }
+      .arrow_of{
+        height: 20vh;
+        font-size: 1.5em;
+    
+      }
+      .logo_ancho{
+        width: 110px;
+        
+    }
+    
+    .logos{
+        width: 70px; 
+    }
+    .grid_img{
+        margin-left: 7%;
+    }
+    .contactos{
+    
+        top:78vh;
+        gap: 20px;
+    }
+    .icon{
+        font-size: 1.2em;
+        
+        
+    }
+    
+    }
+  
+  @media (max-width: 480px) {
+    .title_neon{
+        font-size: 1.5em;
+        top: 12vh;
+    }
+    .info{
+        width: 90%;
+        padding: 30px;
+        display: block;
+        margin: auto;
+        margin-top: 8vh;
+        font-size: 0.9em;
+        margin-bottom: 15px;
+  }
+  .tech_title{
+    font-size: 1.9em;
+    
+  }
+  .arrow_box{
+    height: 20vh;
+    font-size: 1.5em;
+    width: fit-content;
+   
+
+  }
+  .arrow_of{
+    height: 20vh;
+    font-size: 1.5em;
+
+  }
+  .logo_ancho{
+    width: 110px;
+    
+}
+
+.logos{
+    width: 60px; 
+}
+.grid_img{
+    margin-left: 7%;
+}
+.contactos{
+
+    top:78vh;
+    gap: 0px;
+}
+.icon{
+    font-size: 0.8em;
+    
+    
+}
 }

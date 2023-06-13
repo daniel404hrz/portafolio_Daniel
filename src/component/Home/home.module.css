@@ -32,15 +32,12 @@
     justify-content: flex-end;
     backdrop-filter: blur(3px);
     background-color: rgba(0, 0, 0, 0.065);
-    width: 42%;
-    
+    width: fit-content;
     padding: 0 8px;
     color: white;
     font-size: 6em;
     height: fit-content;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 70px;
+    margin-right: 15px;
     margin-top: 5vh;
     
     border-radius: 20px;
@@ -49,12 +46,16 @@
 .info{
     display: flex;
     justify-content: flex-end;
-
+    margin-right: 5vw;
+    width: 60%;
+    position: absolute;
+    top: 40vh;
 }
 .span{
     font-size: 1em;
     color: white;
    padding: 5px 8px;
+   
 }
 .info h2{
     
@@ -62,14 +63,14 @@
 }
 .info_items{
     color: white;
-   
+   text-align: justify;
     padding: 50px;
    width: 70%;
     gap: 30px;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: black;
     height: fit-content;
     margin-right: 20px;
@@ -89,26 +90,32 @@
     color: white;
     background-color: black;
     
-   
-    
+}
+.title_box{
+    display: flex;
+    margin-right: 3%;
+    margin-top: 1%;
 }
 @media (max-width: 768px) {
     .title{
-        font-size: 4em;
+        font-size: 3.3em;
         height:10vh ;
         margin-bottom: 10px;
-        width: 50%;
-        margin-right: 30px;
+        width: fit-content;
+        margin-right: 10px;
         
     }
     .title_neon{
         font-size: 2.1em;
+        top: 15vh;
     }
     .info{
         display: flex;
         justify-content: flex-end;
         margin: 10px;
-        font-size: 1.4em;
+        font-size: 1.1em;
+        width: 100%;
+        top: 30vh;
         
 
      }
@@ -118,31 +125,53 @@
         
         
      }
+     
+     .title_box img{
+        width: 130px;
+        height: 130px;
+        margin-right: 1%;
+     }
+     .title_box{
+        width: 100%;
+        justify-content: flex-end;
+        margin-top: 3%;
+     }
     
   }
 
   @media (max-width: 480px) {
     .title{
-        font-size: 2.3em;
+        font-size: 2.5em;
         height: 10vh;
-        margin-right: 10px;
-        width: 60%;
-        margin-right: 10px;
+        margin-top: 2%;
+        width:fit-content;
+        
         
     }
     .title_neon{
         font-size: 1.5em;
+        top: 12vh;
     }
     .info{
         display: block;
         margin: 10px;
+        width: 95vw;
         
 
      }
      .info_items{
         width: 100%;
-        font-size: 0.7em;
-        
+        font-size: 0.8em;
+     }
+     .title_box{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        margin-top: 0;
+     }
+     .title_box img{
+        width: 90px;
+        height: 90px;
+        gap: 0;
         
      }
   }

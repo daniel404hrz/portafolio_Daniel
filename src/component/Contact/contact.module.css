@@ -1,0 +1,7 @@
+.container{
+    background-image: url('../../image/city/city_4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}

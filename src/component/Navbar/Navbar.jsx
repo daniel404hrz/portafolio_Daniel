@@ -7,7 +7,7 @@ export default function Navbar({navLinks}){
                 <button onClick={navLinks} name={0}>Inicio</button>
                 <button onClick={navLinks} name={1}>Sobre mí</button>
                 <button onClick={navLinks} name={2}>Proyectos</button>
-                <button >Contactos</button>
+                <button onClick={navLinks} name={3}>Contactos</button>
             </div>
         </header>
     )

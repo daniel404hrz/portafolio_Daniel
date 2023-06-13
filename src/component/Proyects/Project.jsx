@@ -8,7 +8,9 @@ import CardProject from "./CardProject"
 import { useState } from "react"
 export default function Proyects(){
     const[detail, setDetail]=useState(0)
-    const clickFunc =()=>{
+    const clickFunc =(value)=>{
+        
+        setDetail(value)
 
     }
 
@@ -16,11 +18,11 @@ export default function Proyects(){
         <div className={styles.container}>
             <h1 className={styles.title_neon}>Proyectos</h1>
             
-            <CardProject></CardProject>
+            <CardProject detail={detail}></CardProject>
             
         <div className={styles.cards}>
-            <Cards text={'MedConnet'} img={medCon} icons={[next]} link={'https://medconnectfront-production.up.railway.app/'}></Cards>
-            <Cards text={'Pi-foods'} img={piFoods} icons={[reactI]} link={'https://pi-foods-daniel.vercel.app/'}></Cards>
+            <Cards clickFunc={clickFunc} value={0} text={'MedConnet'} img={medCon} icons={[next]} link={'https://medconnectfront-production.up.railway.app/'}></Cards>
+            <Cards clickFunc={clickFunc} value={1} text={'Pi-foods'} img={piFoods} icons={[reactI]} link={'https://pi-foods-daniel.vercel.app/'}></Cards>
             
         </div>
         </div>
