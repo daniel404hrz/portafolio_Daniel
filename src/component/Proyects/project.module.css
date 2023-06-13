@@ -1,0 +1,45 @@
+.cards{
+    display: flex;
+    gap: 15px;
+    
+    
+    justify-content: flex-end;
+    
+    
+}
+.container{
+    background-image: url('../../image/city/city_3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 16vh;
+    padding-right:2vw ;
+}
+.title_neon{
+    position: absolute;
+    left: 1%;
+    top: 16vh;
+    box-shadow: 1px 3px 16px 6px rgba(0,0,0,0.8);
+    font-family: Retrofont;
+    font-size: 3em;
+    padding: 0px 25px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    
+   
+    
+}
+.github_icon{
+    font-size: 3em;
+    color: white;
+    
+}
+.summary{
+    position: absolute;
+    top: 40%;
+    left:  0;
+    width: 25vw;
+    background-color: aqua;
+}

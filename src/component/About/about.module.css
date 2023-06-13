@@ -51,7 +51,8 @@
 }
 .arrow_box{
     display: flex;
-    width: 10vh;
+    transition: 0.3s ease;
+    width: 45vw;
     height: 35vh;
     padding-left: 5px;
     align-items: center;
@@ -60,9 +61,22 @@
     color: white;
     background-color: black;
     
-    
 
 }
+.arrow_of{
+    display: flex;
+    transition: 0.3s ease;
+    width:fit-content;
+    height: 35vh;
+    padding-left: 5px;
+    align-items: center;
+    z-index: 20;
+    font-size: 4em;
+    color: white;
+    background-color: black;
+
+}
+
 .box_tech{
     display: flex;
 }
@@ -70,19 +84,7 @@
     transition: 0.2s ease;
     padding: 10px;
 }
-.arrow_on{
-    display: flex;
-    align-items: center;
-    width: 93vh;
-    height: 35vh;
-    padding: 10px;
-    z-index: 20;
-    font-size: 4em;
-    color: white;
-    background-color: black;
-    
 
-}
 .logos{
     width: 100px;
     background-color: white;
@@ -93,13 +95,20 @@
     
 
 }
+
 .grid_img{
-    margin-left: 30px;
+    
+    
     display: flex;
+    
     flex-wrap:wrap;
     gap: 10px;
     justify-content: flex-start;
     object-fit: contain;  
+    transition: 0.2s ease;
+    
+   
+
 }
 .logo_ancho{
     width: 205px;

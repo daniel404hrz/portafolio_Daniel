@@ -12,16 +12,18 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 export default function About(){
     const arrLogos = [next,postG,reactI,redux,trio,vite]
+    
     const [click, setClick]= useState(false)
     const onClickTech=()=>{
         setClick(!click)
     }
+     
     return (
         <div className={styles.container}>
             <section className={styles.info}>
             <h1 className={styles.title_neon}>Sobre mí</h1>
                 <p className={styles.text}>
-            Desarrollador web Full Stack con experiencia en la creación de aplicaciones y sitios web completos, desde la interfaz de usuario hasta la base de datos. Especializado en React, he trabajado en proyectos avanzados que me han permitido profundizar mis conocimientos en esta popular biblioteca de JavaScript para crear interfaces de usuario. 
+           <b>Full Stack Web Developer</b> con experiencia en la creación de aplicaciones y sitios web completos, desde la interfaz de usuario hasta la base de datos. Especializado en React, he trabajado en proyectos avanzados que me han permitido profundizar mis conocimientos en esta popular biblioteca de JavaScript para crear interfaces de usuario. 
            
            </p>
            
@@ -41,19 +43,19 @@ export default function About(){
             <section onClick={onClickTech} className={styles.box_tech}>
             <h3 className={styles.tech_title}>Tecnologias </h3>
 
-            <div className={click ? styles.arrow_on:styles.arrow_box}>
+            <div className={click ? styles.arrow_box: styles.arrow_of } >
                 {click ?<FontAwesomeIcon className={styles.arrow_icon} icon={faAngleRight} /> :
                  <FontAwesomeIcon className={styles.arrow_icon} icon={faAngleLeft} />}
            
            <div className={styles.grid_img}>
-            {click && arrLogos.map((logo, index) => (
-        <img
-          className={index === 4 ?styles.logo_ancho: styles.logos} // Aplica la clase de estilos CSS al elemento img
-          key={index}
-          src={logo} // Utiliza require para importar las imágenes
-          alt="NOT_FOUND"
-        />
-      ))}
+            {click &&  arrLogos.map((logo, index)=>{
+                return <img
+                className={index === 4 ? styles.logo_ancho: styles.logos} 
+                key={index}
+                src={logo} 
+                alt="NOT_FOUND"
+              />
+            })}
       </div>
            
            

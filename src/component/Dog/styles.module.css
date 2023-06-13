@@ -5,8 +5,9 @@
     font-family: sans-serif,Arial, Helvetica, sans-serif;
     font-weight: 600;
     position: absolute;
-    right: 35%;
-    width: 20%;
+    top: -13vh;
+    right: 7%;
+    width: 30%;
     padding-top: 30px;
     justify-content: center;
     
@@ -28,7 +29,20 @@
 }
 .dogGIf{
     width: 60%;
+    margin-left: 20px;
+    margin-bottom: 20px;
     
     
 
+}
+@media (max-width: 768px) {
+    
+    
+}
+
+@media (max-width: 480px) {
+    .dogGIf{
+        width: 50%;
+    }
+    
 }
