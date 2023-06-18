@@ -25,7 +25,7 @@
 
 }
 .text{
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 .title_neon{
     position: absolute;
@@ -53,11 +53,12 @@
 .arrow_box{
     display: flex;
     transition: 0.3s ease;
-    width: 45vw;
+    width: 60vw;
     height: 35vh;
     padding-left: 5px;
     align-items: center;
     z-index: 20;
+    
     font-size: 4em;
     color: white;
     background-color: black;
@@ -87,7 +88,7 @@
 }
 
 .logos{
-    width: 100px;
+    width: 90px;
     background-color: white;
     border-radius: 10px;
 }
@@ -112,7 +113,7 @@
 
 }
 .logo_ancho{
-    width: 205px;
+    width: 200px;
     object-fit: contain;
     border-radius: 10px;
 }
@@ -147,8 +148,9 @@
         top: 15vh;
     }
     .info{
-        width: 70%;
+        width: 60%;
         margin-top: 5vh;
+        padding: 30px;
         margin-right: 2%;
         margin-bottom: 2vh;
     }
@@ -160,6 +162,7 @@
         height: 20vh;
         font-size: 1.5em;
         width: fit-content;
+        
        
     
       }
@@ -186,15 +189,15 @@
     }
     
     .logos{
-        width: 70px; 
+        width: 60px; 
     }
     .grid_img{
         margin-left: 7%;
     }
     .contactos{
-    
-        top:78vh;
-        gap: 20px;
+        font-size: 3em;
+        top:30vh;
+        gap: 0px;
     }
     .icon{
         font-size: 1.2em;

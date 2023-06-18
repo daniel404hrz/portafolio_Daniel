@@ -23,7 +23,7 @@ export default function About(){
             <section className={styles.info}>
             <h1 className={styles.title_neon}>Sobre mí</h1>
                 <p className={styles.text}>
-           <b>Full Stack Web Developer</b> con experiencia en la creación de aplicaciones y sitios web completos, desde la interfaz de usuario hasta la base de datos. Especializado en React, he trabajado en proyectos avanzados que me han permitido profundizar mis conocimientos en esta popular biblioteca de JavaScript para crear interfaces de usuario. 
+           <b>Full Stack Web Developer</b> Especializado en React, he trabajado en proyectos avanzados que me han permitido profundizar mis conocimientos en esta popular biblioteca de JavaScript para crear interfaces de usuario. 
            
            </p>
            

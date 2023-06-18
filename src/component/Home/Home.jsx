@@ -4,20 +4,22 @@ import styles from './home.module.css'
 
 export default function Home(){
     const [name, setName]=useState('')
-    const nameUser ='Daaniel Hernández';
+    const nameUser ='Daniel Hernández';
     
     
     useEffect(() => {
       
         let current = 0;
+        let currentText='';
         const intervalName = setInterval(() => {
-          if (current < nameUser.length - 1) {
-            setName((prevLetter) => prevLetter + nameUser[current]);
+          if (current < nameUser.length) {
+            currentText += nameUser[current];
+            setName(currentText);
             current++;
           } else {
             clearInterval(intervalName);
           }
-        }, 130);
+        }, 200);
     
         return () => {
           clearInterval(intervalName); // Limpiar el intervalo cuando el componente se desmonta
@@ -36,7 +38,7 @@ export default function Home(){
             <div className={styles.container}>
               
             <h1 className={styles.title_neon}>Inicio</h1>
-            <div className={styles.title_box}><h1 className={styles.title}>{name}</h1>
+            <div className={styles.title_box}><h1 className={styles.title}>{name}<span className={styles.cursor}></span></h1>
             <img className='w-40 h-40  rounded-full shadow-lg' src={img} alt="NOT_FOUND" />
             </div>
             <section className={styles.info}>

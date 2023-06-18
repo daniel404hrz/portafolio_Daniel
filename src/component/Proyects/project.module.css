@@ -61,10 +61,13 @@
     
 }
 .summary{
+    z-index: 20;
+    transition: 0.3s ease;
     position: absolute;
     top: 30%;
     left:  0;
-    width: 25vw;
+    width: 30vw;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     background-color: black;
     padding: 40px;
     color: white;
@@ -80,20 +83,92 @@
   text-align: center;
 }
 .summary p{
+
     text-align: justify;
-    font-size: 1em;
+    font-size: 1.1em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 
 }
+.summary_of h1{
+    padding-bottom: 15px;
+  font-size: 1.6rem; /* Puedes ajustar el valor según tus necesidades */
+  font-weight: bold;
+  letter-spacing: -0.025em; /* Puedes ajustar el valor según tus necesidades */
+  color: white;
+  text-align: center;
+
+}
+.summary_of p{
+    
+    text-align: justify;
+    font-size: 1.1em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+.close_button{
+    font-family:sans-serif;
+    position: absolute;
+    font-size: 1.3em;
+    right: 3%;
+    top: 3%;
+    font-weight: 600;
+    padding: 0px 8px;
+    border: 1px solid white;
+    transition: 0.1s ease;
+}
+.close_button:hover{
+    background-color: white;
+    color: black;
+
+}
+.close_button:active{
+    transform: scale(0.8);
+}
+.summary_of{
+    z-index: 20;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    transition: 0.3s ease;
+    position: absolute;
+    top: 30%;
+    left:  0;
+    width: 30vw;
+    background-color: black;
+    padding: 40px;
+    color: white;
+    background-color: #E1351A;
+    box-shadow: 1px 3px 16px 6px rgba(0,0,0,0.4);
+
+}
+@media (max-width: 1000px) {
+    .title_neon{
+        font-size: 2em;
+    }
+    .summary{
+        width: 50vw;
+    }
+
+}
 @media (max-width: 768px) {
+    .title_card{
+        font-size: 01em;
+    }
+    .button_Card{
+        font-size: 0.6em;
+    }
     .title_neon{
         font-size: 2.1em;
         top: 15vh;
 
     }
+    .github_icon{
+        font-size: 2em;
+    }
+    .icono{
+        width: 40px;
+    }
     .container{
-        padding-top: 22vh;
+        padding-top: 25vh;
         padding-right: 0;
         
     }
@@ -101,8 +176,19 @@
         justify-content: center;
         width: 90%;
         margin: auto;
+    }
+    .summary{
+        width: 60vw;
+        top: 25vh;
+        font-size: 0.8em;
+
+    }
+    .summary_of{
+        width: 50vw;
+        top: 25vh;
+        font-size: 0.8em;
         
-        
+
     }
   }
 @media (max-width: 480px) {
@@ -110,6 +196,7 @@
         font-size: 1.5em;
         top: 12vh;
     }
+    
     .container{
         padding-top: 18vh;
         
@@ -136,4 +223,15 @@
    .github_icon{
     font-size: 2.4em;
    }
+   .summary{
+    width: 90vw;
+    top: 20vh;
+
+}
+.summary_of{
+    width: 90vw;
+    top: 20vh;
+    
+
+}
   }

@@ -35,7 +35,7 @@
     width: fit-content;
     padding: 0 8px;
     color: white;
-    font-size: 6em;
+    font-size: 5em;
     height: fit-content;
     margin-right: 15px;
     margin-top: 5vh;
@@ -64,7 +64,7 @@
 .info_items{
     color: white;
    text-align: justify;
-    padding: 50px;
+    padding: 40px;
    width: 70%;
     gap: 30px;
     display: flex;
@@ -75,6 +75,7 @@
     height: fit-content;
     margin-right: 20px;
     border-radius: 10px;
+    font-size: 0.9em;
 
 }
 .title_neon{
@@ -96,9 +97,31 @@
     margin-right: 3%;
     margin-top: 1%;
 }
+.cursor {
+    position: absolute;
+    top: 27%;
+    right: 0;
+    width: 7px;
+    
+    height: 40%;
+    background-color: white;
+    animation: cursor-blink 0.6s infinite;
+  }
+  
+  @keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 @media (max-width: 768px) {
     .title{
-        font-size: 3.3em;
+        font-size: 2.6em;
         height:10vh ;
         margin-bottom: 10px;
         width: fit-content;
@@ -116,25 +139,34 @@
         font-size: 1.1em;
         width: 100%;
         top: 30vh;
+        padding: 5px;
+        
         
 
      }
      .info_items{
+        padding: 25px;
         width: 70%;
+        font-size: 0.6em;
         justify-content: flex-end;
         
         
      }
      
      .title_box img{
-        width: 130px;
-        height: 130px;
+        width: 100px;
+        height: 100px;
         margin-right: 1%;
      }
      .title_box{
         width: 100%;
         justify-content: flex-end;
         margin-top: 3%;
+     }
+     .cursor {
+        top: 12%;
+        height: 40%;
+        width: 5px;
      }
     
   }
@@ -161,7 +193,7 @@
      }
      .info_items{
         width: 100%;
-        font-size: 0.8em;
+        font-size: 0.7em;
      }
      .title_box{
         flex-direction: column-reverse;

@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import styles from "./project.module.css";
-export default function CardProject({ detail }) {
+export default function CardProject({ detail,click, onClickButton }) {
   const [data, setData] = useState({
     title: "",
     summary: "",
   });
+  
   
   useEffect(() => {
     switch (detail) {
@@ -28,8 +29,10 @@ export default function CardProject({ detail }) {
         break;
     }
   }, [detail]);
+  
   return (
-    <div className={styles.summary}>
+    <div className={click ? styles.summary : styles.summary_of}>
+      <button onClick={()=>onClickButton()} className={styles.close_button}>X</button>
       <h1>{data.title}</h1>
       <p>{data.summary}</p>
     </div>

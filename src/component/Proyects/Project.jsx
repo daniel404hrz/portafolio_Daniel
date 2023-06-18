@@ -9,16 +9,20 @@ import { useState } from "react"
 export default function Proyects(){
     const[detail, setDetail]=useState(0)
     const clickFunc =(value)=>{
-        
         setDetail(value)
+        setClick(true)
 
     }
+    const [click , setClick]= useState(false)
+    const onClickButton=()=>{
+        setClick(false)
+      }
 
     return (
         <div className={styles.container}>
             <h1 className={styles.title_neon}>Proyectos</h1>
             
-            <CardProject detail={detail}></CardProject>
+            <CardProject onClickButton={onClickButton} detail={detail} click={click}></CardProject>
             
         <div className={styles.cards}>
             <Cards clickFunc={clickFunc} value={0} text={'MedConnet'} img={medCon} icons={[next]} link={'https://medconnectfront-production.up.railway.app/'}></Cards>
