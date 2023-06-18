@@ -3,7 +3,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import styles from './project.module.css'
 export default function Cards({clickFunc,text, img,icons,link,value}){
     return(
-        <div className="max-w-xs bg-black hover:scale-105 transform transition-transform border border-gray-100 rounded-lg shadow ">
+        <div className={"max-w-xs bg-black hover:scale-105 transform transition-transform border border-gray-100 rounded-lg shadow "+styles.card}>
     <button onClick={()=>clickFunc(value)}  target="_blank">
         <img className="rounded-t-lg" src={img} alt="" />
     </button>

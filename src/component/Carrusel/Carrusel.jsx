@@ -17,7 +17,7 @@ export default function Carrusel() {
   useEffect(() => {
     const handleWheel = (event) => {
       const deltaY = event.deltaY;
-      console.log(deltaY);
+      
 
       if (deltaY > 0) {
         // Desplazamiento hacia abajo (scroll positivo en y)

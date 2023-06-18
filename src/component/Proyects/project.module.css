@@ -150,6 +150,10 @@
 
 }
 @media (max-width: 768px) {
+    .card{
+        width: 250px;
+
+    }
     .title_card{
         font-size: 01em;
     }
@@ -192,6 +196,12 @@
     }
   }
 @media (max-width: 480px) {
+    .card{
+        width: 240px;
+    }
+    .title_card{
+        font-size: 1.1em;
+    }
     .title_neon{
         font-size: 1.5em;
         top: 12vh;
@@ -205,23 +215,21 @@
        
         flex-direction: column;
         align-items: center;
-        width: 70%;
+        width: 100%;
         margin: auto;
         margin-top: 2vh;
     }
     
-   .title_card{
-    font-size: 1.5em;
-   }
+   
    .button_Card{
     
     font-size: 0.8em;
    }
    .icono{
-    width: 40px;
+    width: 35px;
    }
    .github_icon{
-    font-size: 2.4em;
+    font-size: 2.2em;
    }
    .summary{
     width: 90vw;

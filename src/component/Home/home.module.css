@@ -179,6 +179,7 @@
         width:fit-content;
         
         
+        
     }
     .title_neon{
         font-size: 1.5em;
@@ -188,6 +189,8 @@
         display: block;
         margin: 10px;
         width: 95vw;
+        margin-top: 30px;
+        margin-bottom: 30px;
         
 
      }
@@ -199,6 +202,7 @@
         flex-direction: column-reverse;
         align-items: flex-end;
         margin-top: 0;
+       
      }
      .title_box img{
         width: 90px;
