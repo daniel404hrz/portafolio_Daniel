@@ -49,6 +49,7 @@
         width: 30vw;
     }
     .container{
+        display: none;
         position: relative;
         width: fit-content;
                 
