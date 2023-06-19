@@ -1,17 +1,10 @@
-
-
-import Carrusel from './component/Carrusel/Carrusel'
+import Carrusel from "./component/Carrusel/Carrusel";
 function App() {
-
   return (
     <>
-    
-    <Carrusel></Carrusel>
-    
-    
-    
+      <Carrusel></Carrusel>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

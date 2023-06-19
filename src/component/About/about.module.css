@@ -3,11 +3,7 @@
     flex-direction: column;
     align-items: flex-end;
     padding-top: 10vh;
-    background-image: url('../../image/city/city_2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+   
 
 }
 
@@ -250,7 +246,8 @@
 }
 .contactos{
 
-    top:78vh;
+    top: 65vh;
+    
     gap: 0px;
 }
 .icon{

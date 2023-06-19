@@ -16,13 +16,11 @@
     flex-direction: column;
     align-items: flex-end;
     padding-top: 12vh;
-    background-image: url('../../image/city/city_1.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    gap: 30px;
+   
     
-    height: 100vh; /* Cambia este valor según tus necesidades */
+    gap: 20px;
+    
+   
     
     
 }
@@ -48,8 +46,8 @@
     justify-content: flex-end;
     margin-right: 5vw;
     width: 60%;
-    position: absolute;
-    top: 40vh;
+    
+    
 }
 .span{
     font-size: 1em;
@@ -123,7 +121,7 @@
     .title{
         font-size: 2.6em;
         height:10vh ;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
         width: fit-content;
         margin-right: 10px;
         
@@ -172,6 +170,10 @@
   }
 
   @media (max-width: 480px) {
+    .container{
+        flex-direction: column;
+        gap: 5px;
+    }
     .title{
         font-size: 2.5em;
         height: 10vh;
@@ -189,19 +191,21 @@
         display: block;
         margin: 10px;
         width: 95vw;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 0px;
+        margin-bottom: 10px;
         
 
      }
      .info_items{
         width: 100%;
         font-size: 0.7em;
+        
      }
      .title_box{
         flex-direction: column-reverse;
         align-items: flex-end;
         margin-top: 0;
+        
        
      }
      .title_box img{

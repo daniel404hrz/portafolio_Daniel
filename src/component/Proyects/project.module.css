@@ -21,11 +21,7 @@
     background-color:hsl(224, 100%, 72%); ;
 }
 .container{
-    background-image: url('../../image/city/city_3.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+    
     padding-top: 16vh;
     padding-right:2vw ;
 }
@@ -217,7 +213,7 @@
         align-items: center;
         width: 100%;
         margin: auto;
-        margin-top: 2vh;
+        margin-top: 0vh;
     }
     
    
