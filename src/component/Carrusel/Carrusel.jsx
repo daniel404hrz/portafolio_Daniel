@@ -49,7 +49,7 @@ export default function Carrusel() {
 
   const currentItem = array[itemIndex];
   const image = backGrounds[itemIndex];
-  console.log(image);
+  
   return (
     <div
       className={styles.backGround}
