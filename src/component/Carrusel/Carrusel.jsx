@@ -55,7 +55,7 @@ export default function Carrusel() {
       className={styles.backGround}
       style={{ backgroundImage: `url(${image})` }}
     >
-      <Navbar navLinks={navLinks}></Navbar>
+      <Navbar navLinks={navLinks} itemIndex={itemIndex}></Navbar>
       {currentItem}
       <Dog itemIndex={itemIndex}></Dog>
     </div>
