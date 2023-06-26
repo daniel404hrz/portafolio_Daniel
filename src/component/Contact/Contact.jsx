@@ -165,7 +165,7 @@ export default function Contact() {
       </form>
       
       <section className={styles.contactos}>
-      <h2 className={styles.title}>{title}</h2>
+      <h2 translate="no" className={styles.title}>{title}</h2>
         <a
           href="https://www.linkedin.com/in/daniel-hern%C3%A1ndez-236165259/"
           target="_blank"

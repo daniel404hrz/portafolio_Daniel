@@ -8,20 +8,25 @@ import Contact from "../Contact/Contact";
 import styles from "./carrusel.module.css";
 
 export default function Carrusel() {
+
   const [itemIndex, setItemIndex] = useState(0);
-  const array = [<Home />, <About />, <Proyects />, <Contact />];
-  const clondURL= 'https://res.cloudinary.com/dwixaelcd/image/upload/v1687394980/Portafolio/'
+  const array = [<Home  />, <About />, <Proyects />, <Contact />];
+  const clondURL= 'https://res.cloudinary.com/dwixaelcd/image/upload/f_auto,q_auto/v1/Portafolio/'
   const backGrounds = [
     `${clondURL}s7ho9j7ursp1w7azsbhz.jpg`,
     `${clondURL}omeco7pfbpthmotvxy7n.png`,
     `${clondURL}miqktlpfuprgdgsqfa2c.jpg`,
     `${clondURL}fqdbug5rojbn5ncbol6i.jpg`,
   ];
-  const navLinks = (event) => {
-    const num = event.target.name;
+  
+    
+  const navLinks = (num) => {
+    
     const index = parseInt(num, 10);
+    
     setItemIndex(index);
   };
+  
 
   useEffect(() => {
     const handleWheel = (event) => {

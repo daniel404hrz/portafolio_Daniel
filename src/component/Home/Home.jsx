@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import img from '../../image/Daniel.png'
 import styles from './home.module.css'
+import { intervalTitle } from "../Contact/intervalTitle";
 
 export default function Home(){
     const [name, setName]=useState('')
@@ -8,24 +9,7 @@ export default function Home(){
     
     
     useEffect(() => {
-      
-        let current = 0;
-        let currentText='';
-        const intervalName = setInterval(() => {
-          if (current < nameUser.length) {
-            currentText += nameUser[current];
-            setName(currentText);
-            current++;
-          } else {
-            clearInterval(intervalName);
-          }
-        }, 200);
-    
-        return () => {
-          clearInterval(intervalName); // Limpiar el intervalo cuando el componente se desmonta
-          
-          
-        };
+        intervalTitle(setName,nameUser)
       
     }, []);
 
@@ -38,7 +22,7 @@ export default function Home(){
             <div className={styles.container}>
               
             <h1 className={styles.title_neon}>Inicio</h1>
-            <div className={styles.title_box}><h1 className={styles.title}>{name}<span className={styles.cursor}></span></h1>
+            <div translate="no" className={styles.title_box}><h1 className={styles.title}>{name}<span className={styles.cursor}></span></h1>
             <img className='w-40 h-40  rounded-full shadow-lg' src={img} alt="NOT_FOUND" />
             </div>
             <section className={styles.info}>

@@ -1,5 +1,5 @@
-export const intervalTitle = (setTitle) => {
-    const title = 'Tambien puedes contactarme en mis otras redes.';
+export const intervalTitle = (setTitle,name) => {
+    const title = name ||'Tambien puedes contactarme en mis otras redes.';
     let index = 0;
     let intervalName = null;
     let currentText = '';
@@ -12,6 +12,6 @@ export const intervalTitle = (setTitle) => {
       } else {
         clearInterval(intervalName);
       }
-    }, 50);
+    }, name?150:50);
   };
 

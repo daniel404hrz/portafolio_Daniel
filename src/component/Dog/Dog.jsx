@@ -4,7 +4,7 @@ import { useState } from 'react'
 import styles from './styles.module.css'
 export default function Dog({itemIndex}){
     const obj ={
-        0:{ left: '8%'  },
+        0:{ left: '5%'  },
         1:{ left: '30%' },
         2:{ left: '50%' },
         3:{ left: '70%' }

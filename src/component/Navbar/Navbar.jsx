@@ -1,44 +1,41 @@
-import { useState } from "react";
 import styles from "./navbar.module.css";
 
 export default function Navbar({ navLinks,itemIndex }) {
   
 
-  const activeButton = (event) => {
-    navLinks(event);
- 
-  };
+  
   return (
     <header className={styles.container}>
       <div className={styles.navs}>
-        <button name={0} 
+        <button 
         style={{
             background: itemIndex === 0 ? "black" : "initial",
           }}
-        onClick={activeButton}>
+        onClick={ ()=>navLinks(0)}
+        >
           Inicio
         </button>
         <button
-          name={1}
+          
           style={{
             background: itemIndex === 1 ? "black" : "initial",
           }}
-          onClick={activeButton}
+          onClick={()=>navLinks(1)}
         >
           Sobre mí
         </button>
-        <button name={2} 
+        <button 
         style={{
             background: itemIndex === 2 ? "black" : "initial",
           }}
-        onClick={activeButton}>
+        onClick={()=>navLinks(2)}>
           Proyectos
         </button>
-        <button name={3} 
+        <button 
         style={{
             background: itemIndex === 3 ? "black" : "initial",
           }}
-        onClick={activeButton}>
+        onClick={()=>navLinks(3)}>
           Contactos
         </button>
       </div>
