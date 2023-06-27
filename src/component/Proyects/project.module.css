@@ -31,10 +31,10 @@
 .title_neon{
     position: absolute;
     left: 1%;
-    top: 16vh;
+    top: 14vh;
     box-shadow: 1px 3px 16px 6px rgba(0,0,0,0.2);
     font-family: Retrofont;
-    font-size: 3em;
+    font-size: 2.3em;
     padding: 0px 25px;
     border-radius: 10px;
     color: white;
@@ -199,7 +199,7 @@
         font-size: 1.1em;
     }
     .title_neon{
-        font-size: 1.5em;
+        font-size: 1.4em;
         top: 12vh;
     }
     

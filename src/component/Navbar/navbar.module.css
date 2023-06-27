@@ -39,8 +39,8 @@
 
 @media (max-width: 480px) {
     .navs button{
-        font-size: 1.1em;
-        padding: 4px 15px;
+        font-size: 1em;
+        padding: 4px 10px;
     }
     .navs {
         height: 10vh;

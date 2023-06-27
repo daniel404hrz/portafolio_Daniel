@@ -25,8 +25,8 @@ export default function Proyects(){
             <CardProject onClickButton={onClickButton} detail={detail} click={click}></CardProject>
             
         <div className={styles.cards}>
-            <Cards clickFunc={clickFunc} value={0} text={'MedConnet'} img={medCon} icons={[next]} link={'https://medconnectfront-production.up.railway.app/'}></Cards>
-            <Cards clickFunc={clickFunc} value={1} text={'Pi-foods'} img={piFoods} icons={[reactI]} link={'https://pi-foods-daniel.vercel.app/'}></Cards>
+            <Cards clickFunc={clickFunc} value={0} text={'MedConnet'} img={medCon} icons={[next]} link={'https://medconnectfront-production.up.railway.app'}></Cards>
+            <Cards clickFunc={clickFunc} value={1} text={'Pi-foods'} img={piFoods} icons={[reactI]} link={'https://pi-foods-daniel.vercel.app'}></Cards>
             
         </div>
         </div>
